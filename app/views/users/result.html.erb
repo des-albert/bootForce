@@ -1,0 +1,19 @@
+<h1>Opportunity </h1>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Desciprtion</th>
+    <th>Stage Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @opportunities.each do |row| %>
+    <tr>
+      <td><%= row.Name %></td>
+      <td><%= row.Description %></td>
+      <td><%= row.Amount %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
